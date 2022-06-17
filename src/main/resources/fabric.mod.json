@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "friendlybees",
+  "version": "${version}",
+
+  "name": "Friendly Bees",
+  "description": "This mod allows you to tame bees!!",
+  "authors": [
+    "Sammerson"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/friendlybees/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.sammerson.friendlybees.FriendlyBees"
+    ],
+    "client": [
+      "net.sammerson.friendlybees.FriendlyBeesClient"
+    ]
+  },
+  "mixins": [
+    "friendlybees.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
